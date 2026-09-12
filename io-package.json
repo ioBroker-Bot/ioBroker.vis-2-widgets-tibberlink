@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "vis-2-widgets-tibberlink",
-        "version": "0.4.11",
+        "version": "0.4.12",
         "news": {
+            "0.4.12": {
+                "en": "add Node.js 26 to the CI test matrix (22/24/26), lower minimum Node.js to 22, remove unused adapter-react-v5 dependency and rebuild widgets with Vite 8",
+                "de": "Node.js 26 zur CI-Testmatrix hinzugefügt (22/24/26), Mindest-Node.js auf 22 gesenkt, ungenutzte adapter-react-v5-Abhängigkeit entfernt, Widgets mit Vite 8 neu gebaut",
+                "ru": "добавлен Node.js 26 в матрицу тестов CI (22/24/26), минимальная версия Node.js снижена до 22, удалена неиспользуемая зависимость adapter-react-v5, виджеты пересобраны с Vite 8",
+                "nl": "Node.js 26 toegevoegd aan de CI-testmatrix (22/24/26), minimale Node.js verlaagd naar 22, ongebruikte adapter-react-v5-afhankelijkheid verwijderd, widgets herbouwd met Vite 8",
+                "fr": "ajout de Node.js 26 à la matrice de tests CI (22/24/26), Node.js minimal abaissé à 22, dépendance adapter-react-v5 inutilisée supprimée, widgets reconstruits avec Vite 8",
+                "it": "aggiunto Node.js 26 alla matrice di test CI (22/24/26), Node.js minimo abbassato a 22, rimossa la dipendenza adapter-react-v5 inutilizzata, widget ricompilati con Vite 8",
+                "es": "se añade Node.js 26 a la matriz de pruebas CI (22/24/26), Node.js mínimo reducido a 22, se elimina la dependencia adapter-react-v5 sin uso y se reconstruyen los widgets con Vite 8",
+                "pl": "dodano Node.js 26 do macierzy testów CI (22/24/26), obniżono minimalną wersję Node.js do 22, usunięto nieużywaną zależność adapter-react-v5, przebudowano widżety z Vite 8",
+                "pt": "adicionado Node.js 26 à matriz de testes CI (22/24/26), Node.js mínimo reduzido para 22, removida a dependência adapter-react-v5 não utilizada e widgets recompilados com Vite 8",
+                "uk": "додано Node.js 26 до матриці тестів CI (22/24/26), мінімальну версію Node.js знижено до 22, вилучено невикористовувану залежність adapter-react-v5, віджети перезібрано з Vite 8",
+                "zh-cn": "将 Node.js 26 加入 CI 测试矩阵（22/24/26），最低 Node.js 降至 22，移除未使用的 adapter-react-v5 依赖，并使用 Vite 8 重新构建小部件"
+            },
             "0.4.11": {
                 "en": "sync template PRs: update Dependabot config, add auto-merge workflow, fix VS Code schema link",
                 "de": "Template-PRs synchronisiert: Dependabot-Konfiguration, Auto-Merge-Workflow, VS-Code-Schema-Link",

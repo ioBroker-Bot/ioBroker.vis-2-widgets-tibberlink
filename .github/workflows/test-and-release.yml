@@ -33,9 +33,50 @@ jobs:
           install-command: 'npm install'
 
 
+  # Runs build and package tests on all supported Node.js versions
+  adapter-tests:
+    needs: [check-and-lint]
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x, 24.x, 26.x]
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # npm 11.x bundled with Node.js 22.22.x is missing promise-retry from its
+      # bundled deps, which breaks any npm operation that triggers arborist/rebuild.
+      # Workaround (replacing npm with npm@10.9.2) for Node 22.x only.
+      - name: Replace broken npm with npm@10 (Node 22.x only)
+        if: matrix.node-version == '22.x'
+        run: |
+          NPM_GLOBAL="$(dirname $(dirname $(which npm)))/lib/node_modules/npm"
+          rm -rf "$NPM_GLOBAL" && mkdir -p "$NPM_GLOBAL"
+          curl -fsSL "https://registry.npmjs.org/npm/-/npm-10.9.2.tgz" \
+            | tar xz --strip-components=1 -C "$NPM_GLOBAL"
+          echo "npm version: $(npm --version)"
+
+      - name: Install dependencies
+        run: npm install && cd src-widgets && npm install && cd ..
+
+      - name: Build widgets
+        run: npm run build
+
+      - name: Run local tests
+        run: npm test
+
+
   # Deploys the final package to NPM
   deploy:
-    needs: [check-and-lint]
+    needs: [check-and-lint, adapter-tests]
 
     # Trigger this step only when a commit on any branch is tagged with a version number
     if: |

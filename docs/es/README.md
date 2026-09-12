@@ -102,6 +102,9 @@ Agrega los datos de consumo `jsonDaily` de tibberlink para el mes calendario act
 
 ## Changelog
 
+### 0.4.12 (2026-09-12)
+* (ssbingo) Se añade Node.js 26 a la matriz de pruebas CI (22/24/26), Node.js mínimo reducido a 22, se elimina la dependencia adapter-react-v5 sin uso y se reconstruyen los widgets con Vite 8
+
 ### 0.4.11 (2026-07-02)
 * (ssbingo) Sincronización de PRs de plantilla: config Dependabot, workflow auto-merge, enlace esquema VS Code
 
