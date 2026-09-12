@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "vis-2-widgets-tibberlink",
-        "version": "0.4.12",
+        "version": "0.4.13",
         "news": {
+            "0.4.13": {
+                "en": "remove four unused React dev dependencies from src-widgets; the published widget bundle is unchanged",
+                "de": "vier ungenutzte React-Entwicklungsabhängigkeiten aus src-widgets entfernt; das veröffentlichte Widget-Bundle bleibt unverändert",
+                "ru": "удалены четыре неиспользуемые React-зависимости разработки из src-widgets; опубликованный бандл виджетов не изменился",
+                "nl": "vier ongebruikte React-ontwikkelafhankelijkheden uit src-widgets verwijderd; de gepubliceerde widgetbundel is ongewijzigd",
+                "fr": "suppression de quatre dépendances de développement React inutilisées dans src-widgets ; le bundle de widgets publié est inchangé",
+                "it": "rimosse quattro dipendenze di sviluppo React inutilizzate da src-widgets; il bundle dei widget pubblicato è invariato",
+                "es": "se eliminan cuatro dependencias de desarrollo de React sin uso de src-widgets; el paquete de widgets publicado no cambia",
+                "pl": "usunięto cztery nieużywane zależności deweloperskie React z src-widgets; opublikowany pakiet widżetów bez zmian",
+                "pt": "removidas quatro dependências de desenvolvimento React não utilizadas de src-widgets; o pacote de widgets publicado permanece inalterado",
+                "uk": "вилучено чотири невикористовувані React-залежності розробки з src-widgets; опублікований бандл віджетів без змін",
+                "zh-cn": "从 src-widgets 移除四个未使用的 React 开发依赖；已发布的小部件包内容未变"
+            },
             "0.4.12": {
                 "en": "add Node.js 26 to the CI test matrix (22/24/26), lower minimum Node.js to 22, remove unused adapter-react-v5 dependency and rebuild widgets with Vite 8",
                 "de": "Node.js 26 zur CI-Testmatrix hinzugefügt (22/24/26), Mindest-Node.js auf 22 gesenkt, ungenutzte adapter-react-v5-Abhängigkeit entfernt, Widgets mit Vite 8 neu gebaut",

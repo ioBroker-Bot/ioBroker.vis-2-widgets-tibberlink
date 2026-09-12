@@ -102,6 +102,9 @@ Aggrega i dati di consumo `jsonDaily` di tibberlink per il mese solare corrente.
 
 ## Changelog
 
+### 0.4.13 (2026-09-12)
+* (ssbingo) Rimosse quattro dipendenze di sviluppo React inutilizzate da src-widgets; il bundle dei widget pubblicato è invariato
+
 ### 0.4.12 (2026-09-12)
 * (ssbingo) Aggiunto Node.js 26 alla matrice di test CI (22/24/26), Node.js minimo abbassato a 22, rimossa la dipendenza adapter-react-v5 inutilizzata, widget ricompilati con Vite 8
 
