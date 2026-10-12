@@ -102,6 +102,9 @@
 
 ## Журнал змін
 
+### 0.5.1 (2026-10-12)
+* (ssbingo) Оновлено залежності розробки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) та перезібрано бандл віджетів. Готово до vis-2 з React 19 і MUI 9: збірка спільно використовує react і react/jsx-runtime з vis-2 та не використовує ні MUI, ні adapter-react-v5
+
 ### 0.5.0 (2026-09-25)
 * (ssbingo) Збірку віджетів переведено з @originjs/vite-plugin-federation на @module-federation/vite - середовище Module Federation 2, яке використовує сам vis-2. Бандл тепер містить mf-manifest.json і спільно використовує react та react/jsx-runtime з vis-2 замість власної копії - саме це vis-2 перевіряє перед завантаженням набору віджетів
 

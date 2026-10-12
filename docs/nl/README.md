@@ -102,6 +102,9 @@ Aggregeert de tibberlink `jsonDaily`-verbruiksdata voor de lopende kalendermaand
 
 ## Changelog
 
+### 0.5.1 (2026-10-12)
+* (ssbingo) Ontwikkelafhankelijkheden bijgewerkt (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) en widgetbundel opnieuw gebouwd. Gereed voor vis-2 met React 19 en MUI 9: de build deelt react en react/jsx-runtime met vis-2 en gebruikt noch MUI noch adapter-react-v5
+
 ### 0.5.0 (2026-09-25)
 * (ssbingo) Widget-build overgezet van @originjs/vite-plugin-federation naar @module-federation/vite, de Module Federation 2-runtime van vis-2 zelf. De bundel bevat nu mf-manifest.json en deelt react en react/jsx-runtime met vis-2 in plaats van een eigen kopie mee te leveren - precies wat vis-2 controleert voordat het een widgetset laadt
 

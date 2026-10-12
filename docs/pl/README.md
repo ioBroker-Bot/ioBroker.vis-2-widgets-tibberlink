@@ -102,6 +102,9 @@ Agreguje dane zużycia `jsonDaily` tibberlink dla bieżącego miesiąca kalendar
 
 ## Changelog
 
+### 0.5.1 (2026-10-12)
+* (ssbingo) Zaktualizowano zależności deweloperskie (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) i przebudowano pakiet widżetów. Gotowe dla vis-2 z React 19 i MUI 9: build współdzieli react i react/jsx-runtime z vis-2 oraz nie używa ani MUI, ani adapter-react-v5
+
 ### 0.5.0 (2026-09-25)
 * (ssbingo) Build widżetów przeniesiony z @originjs/vite-plugin-federation na @module-federation/vite, środowisko Module Federation 2 używane przez samo vis-2. Pakiet zawiera teraz mf-manifest.json i współdzieli react oraz react/jsx-runtime z vis-2 zamiast dołączać własną kopię - dokładnie to sprawdza vis-2 przed załadowaniem zestawu widżetów
 

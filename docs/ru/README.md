@@ -102,6 +102,9 @@ VIS-2 виджеты для отображения данных динамиче
 
 ## Журнал изменений
 
+### 0.5.1 (2026-10-12)
+* (ssbingo) Обновлены зависимости разработки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0), бандл виджетов пересобран. Готово к vis-2 на React 19 и MUI 9: сборка разделяет react и react/jsx-runtime с vis-2 и не использует ни MUI, ни adapter-react-v5
+
 ### 0.5.0 (2026-09-25)
 * (ssbingo) Сборка виджетов переведена с @originjs/vite-plugin-federation на @module-federation/vite - ту же среду Module Federation 2, что использует сам vis-2. Бандл теперь содержит mf-manifest.json и разделяет react и react/jsx-runtime с vis-2 вместо собственной копии - именно это vis-2 проверяет перед загрузкой набора виджетов
 

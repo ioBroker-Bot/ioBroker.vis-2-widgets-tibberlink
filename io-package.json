@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "vis-2-widgets-tibberlink",
-        "version": "0.5.0",
+        "version": "0.5.1",
         "news": {
+            "0.5.1": {
+                "en": "update dev dependencies (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) and rebuild the widget bundle",
+                "de": "Entwicklungsabhängigkeiten aktualisiert (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) und Widget-Bundle neu gebaut",
+                "ru": "обновлены зависимости разработки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0), бандл виджетов пересобран",
+                "nl": "ontwikkelafhankelijkheden bijgewerkt (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) en widgetbundel opnieuw gebouwd",
+                "fr": "mise à jour des dépendances de développement (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) et reconstruction du bundle de widgets",
+                "it": "aggiornate le dipendenze di sviluppo (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) e ricompilato il bundle dei widget",
+                "es": "se actualizan las dependencias de desarrollo (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) y se reconstruye el paquete de widgets",
+                "pl": "zaktualizowano zależności deweloperskie (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) i przebudowano pakiet widżetów",
+                "pt": "atualizadas as dependências de desenvolvimento (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) e recompilado o pacote de widgets",
+                "uk": "оновлено залежності розробки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) та перезібрано бандл віджетів",
+                "zh-cn": "更新开发依赖（@module-federation/vite 1.23.1、Vite 8.3.2、@iobroker/testing 6.3.0）并重新构建小部件包"
+            },
             "0.5.0": {
                 "en": "switch the widget build to @module-federation/vite, the Module Federation 2 runtime vis-2 itself uses; react and react/jsx-runtime now come from vis-2 instead of being bundled",
                 "de": "Widget-Build auf @module-federation/vite umgestellt, die Module-Federation-2-Runtime von vis-2 selbst; react und react/jsx-runtime kommen jetzt von vis-2 statt aus dem Bundle",

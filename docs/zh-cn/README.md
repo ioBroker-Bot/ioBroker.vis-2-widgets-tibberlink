@@ -102,6 +102,9 @@
 
 ## 更新日志
 
+### 0.5.1 (2026-10-12)
+* (ssbingo) 更新开发依赖（@module-federation/vite 1.23.1、Vite 8.3.2、@iobroker/testing 6.3.0）并重新构建小部件包。已就绪适配 React 19 与 MUI 9 的 vis-2：构建与 vis-2 共享 react 和 react/jsx-runtime，且未使用 MUI 或 adapter-react-v5
+
 ### 0.5.0 (2026-09-25)
 * (ssbingo) 小部件构建从 @originjs/vite-plugin-federation 切换到 @module-federation/vite，即 vis-2 自身使用的 Module Federation 2 运行时。构建产物现包含 mf-manifest.json，并与 vis-2 共享 react 和 react/jsx-runtime，而非自带副本——这正是 vis-2 加载小部件集前所检查的内容
 
