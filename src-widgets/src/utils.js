@@ -9,14 +9,23 @@ export function levelColor(level) {
     }
 }
 
-export function levelText(level) {
+/**
+ * Translation key for a Tibber price level.
+ *
+ * Returns the key instead of a text because this module has no access to the widget translator -
+ * the caller resolves it with TibberWidgetBase.tr(). An unknown level has no key.
+ *
+ * @param {string} level price level as delivered by tibberlink, e.g. "VERY_CHEAP"
+ * @returns {string|null} key for i18n/*.json, or null if the level is unknown
+ */
+export function levelKey(level) {
     switch ((level || '').toUpperCase()) {
-        case 'VERY_CHEAP':      return 'Sehr günstig';
-        case 'CHEAP':           return 'Günstig';
-        case 'NORMAL':          return 'Normal';
-        case 'EXPENSIVE':       return 'Teuer';
-        case 'VERY_EXPENSIVE':  return 'Sehr teuer';
-        default:                return level || '--';
+        case 'VERY_CHEAP':      return 'level_very_cheap';
+        case 'CHEAP':           return 'level_cheap';
+        case 'NORMAL':          return 'level_normal';
+        case 'EXPENSIVE':       return 'level_expensive';
+        case 'VERY_EXPENSIVE':  return 'level_very_expensive';
+        default:                return null;
     }
 }
 

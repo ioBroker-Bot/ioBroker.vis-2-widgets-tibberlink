@@ -95,6 +95,9 @@ Aggregates the tibberlink `jsonDaily` consumption data for the current calendar 
 | `tib_darkmode` | `true` | Dark (default) or light theme |
 
 ## Changelog
+### 0.6.0 (2026-11-02)
+* (ssbingo) The widget texts are translated now. All four widgets resolve their labels through the vis-2 i18n system in eleven languages instead of carrying hard-coded German, as the ioBroker language rules require. German users see the same German as before; every other language now gets its own. The title fields default to the translated title, so an empty title follows the display language
+
 ### 0.5.2 (2026-11-02)
 * (ssbingo) Switch the Dependabot auto-merge workflow from pull_request_target to pull_request, which GitHub restricts from 2 November 2026. Update dev dependencies (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) and rebuild the widget bundle
 

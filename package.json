@@ -1,6 +1,6 @@
 {
   "name": "iobroker.vis-2-widgets-tibberlink",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Widgets for Tibberlink",
   "author": {
     "name": "ssbingo",
@@ -43,10 +43,11 @@
     "lint": "eslint .",
     "prepublishOnly": "npm run build",
     "test:package": "mocha test/package --exit",
-    "test": "npm run test:package && npm run test:widgets",
+    "test": "npm run test:package && npm run test:widgets && npm run test:i18n",
     "translate": "translate-adapter",
     "release": "release-script",
-    "test:widgets": "mocha test/widgets --exit"
+    "test:widgets": "mocha test/widgets --exit",
+    "test:i18n": "mocha test/i18n --exit"
   },
   "bugs": {
     "url": "https://github.com/ssbingo/ioBroker.vis-2-widgets-tibberlink/issues"

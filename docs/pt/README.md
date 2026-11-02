@@ -102,6 +102,9 @@ Agrega os dados de consumo `jsonDaily` do tibberlink para o mês civil actual. A
 
 ## Changelog
 
+### 0.6.0 (2026-11-02)
+* (ssbingo) Os textos dos widgets estão traduzidos. Os quatro widgets resolvem os rótulos em onze idiomas pelo sistema i18n do vis-2 em vez de conter alemão fixo no código, como exigem as regras de idioma do ioBroker. Utilizadores alemães veem o mesmo alemão de antes; os restantes idiomas têm agora o seu. Os campos de título recorrem ao título traduzido, pelo que um título vazio segue o idioma de exibição
+
 ### 0.5.2 (2026-11-02)
 * (ssbingo) Fluxo de auto-merge do Dependabot migrado de pull_request_target para pull_request, que o GitHub restringe a partir de 2 de novembro de 2026. Dependências de desenvolvimento atualizadas (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) e pacote de widgets recompilado
 

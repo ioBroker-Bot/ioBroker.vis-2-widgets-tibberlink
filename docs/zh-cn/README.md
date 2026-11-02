@@ -102,6 +102,9 @@
 
 ## 更新日志
 
+### 0.6.0 (2026-11-02)
+* (ssbingo) 小部件文本现已翻译。四个小部件均通过 vis-2 的 i18n 系统以十一种语言解析标签，不再内置硬编码德语——这是 ioBroker 语言规则的要求。德语用户看到的德语与此前一致，其他语言现在各有其译文。标题字段回退到翻译后的标题，因此留空的标题会跟随显示语言
+
 ### 0.5.2 (2026-11-02)
 * (ssbingo) Dependabot 自动合并工作流从 pull_request_target 切换到 pull_request——GitHub 自 2026 年 11 月 2 日起限制该触发器。更新开发依赖（React 19.3.1、Vite 8.3.5、@module-federation/vite 1.23.5、@iobroker/types-vis-2 2.20.4、@iobroker/testing 6.3.1）并重新构建小部件包
 

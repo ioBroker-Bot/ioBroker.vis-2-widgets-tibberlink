@@ -1,10 +1,11 @@
 import React from 'react';
 import { slotColor, fmtTime } from './utils';
 import './styleInjector.js';
+import TibberWidgetBase from './TibberWidgetBase';
 
-const PREV = '<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:14px;padding:14px;width:260px;height:240px;font-family:sans-serif;color:#e0e6ef;box-sizing:border-box;display:flex;flex-direction:column"><div style="font-size:.6rem;text-transform:uppercase;letter-spacing:1px;text-align:center;opacity:.7;margin-bottom:6px;flex-shrink:0">&#9889; Günstigstes Fenster</div><div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;flex-shrink:0"><div style="text-align:center"><div style="font-size:.5rem;opacity:.6;margin-bottom:1px">Start</div><div style="font-size:1.5rem;font-weight:700;color:#27ae60">02:00</div></div><div style="font-size:1.1rem;opacity:.45">&#8594;</div><div style="text-align:center"><div style="font-size:.5rem;opacity:.6;margin-bottom:1px">Ende</div><div style="font-size:1.5rem;font-weight:700;color:#27ae60">05:00</div></div></div><div style="font-size:.9rem;font-weight:700;text-align:center;color:#27ae60;margin-bottom:8px;flex-shrink:0">21.4 ct/kWh</div><div style="flex:1;display:flex;align-items:flex-end;gap:1px;padding:0 1px"><div style="flex:1;background:#7f8c8d;height:55%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#7f8c8d;height:48%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#27ae60;height:28%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#27ae60;height:22%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#27ae60;height:25%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#7f8c8d;height:42%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#f39c12;height:65%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#e74c3c;height:90%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#f39c12;height:72%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#7f8c8d;height:50%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#52d68a;height:32%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#1abc9c;height:26%;border-radius:1px 1px 0 0;opacity:.65"></div></div><div style="font-size:.55rem;text-align:center;opacity:.55;margin-top:4px;flex-shrink:0">Heute · 3 Stunden</div></div>';
+const PREV = '<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:14px;padding:14px;width:260px;height:240px;font-family:sans-serif;color:#e0e6ef;box-sizing:border-box;display:flex;flex-direction:column"><div style="font-size:.6rem;text-transform:uppercase;letter-spacing:1px;text-align:center;opacity:.7;margin-bottom:6px;flex-shrink:0">&#9889; Cheapest window</div><div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;flex-shrink:0"><div style="text-align:center"><div style="font-size:.5rem;opacity:.6;margin-bottom:1px">Start</div><div style="font-size:1.5rem;font-weight:700;color:#27ae60">02:00</div></div><div style="font-size:1.1rem;opacity:.45">&#8594;</div><div style="text-align:center"><div style="font-size:.5rem;opacity:.6;margin-bottom:1px">End</div><div style="font-size:1.5rem;font-weight:700;color:#27ae60">05:00</div></div></div><div style="font-size:.9rem;font-weight:700;text-align:center;color:#27ae60;margin-bottom:8px;flex-shrink:0">21.4 ct/kWh</div><div style="flex:1;display:flex;align-items:flex-end;gap:1px;padding:0 1px"><div style="flex:1;background:#7f8c8d;height:55%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#7f8c8d;height:48%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#27ae60;height:28%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#27ae60;height:22%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#27ae60;height:25%;border-radius:1px 1px 0 0"></div><div style="flex:1;background:#7f8c8d;height:42%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#f39c12;height:65%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#e74c3c;height:90%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#f39c12;height:72%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#7f8c8d;height:50%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#52d68a;height:32%;border-radius:1px 1px 0 0;opacity:.65"></div><div style="flex:1;background:#1abc9c;height:26%;border-radius:1px 1px 0 0;opacity:.65"></div></div><div style="font-size:.55rem;text-align:center;opacity:.55;margin-top:4px;flex-shrink:0">Today &#183; 3 hours</div></div>';
 
-class TibberCheapestWindow extends window.visRxWidget {
+class TibberCheapestWindow extends TibberWidgetBase {
     static getWidgetInfo() {
         return {
             id: 'tplTibberCheapestWindow',
@@ -27,7 +28,7 @@ class TibberCheapestWindow extends window.visRxWidget {
                     name: 'display',
                     label: 'Display',
                     fields: [
-                        { name: 'tib_title',    type: 'text',     label: 'Title',              default: 'Günstigstes Fenster' },
+                        { name: 'tib_title',    type: 'text',     label: 'Title',              default: '' },
                         { name: 'tib_darkmode', type: 'checkbox', label: 'Dark mode',           default: true },
                         { name: 'amount_hours', type: 'number',   label: 'Window size (hours)', default: 3 },
                         { name: 'future_only',  type: 'checkbox', label: 'Future slots only',   default: true },
@@ -96,13 +97,13 @@ class TibberCheapestWindow extends window.visRxWidget {
             } catch (e) { /* ignore */ }
         });
 
-        const dayStr = (winSlots[0].startsAt && new Date(winSlots[0].startsAt).toDateString() !== now.toDateString()) ? 'Morgen' : 'Heute';
+        const dayKey = (winSlots[0].startsAt && new Date(winSlots[0].startsAt).toDateString() !== now.toDateString()) ? 'tomorrow' : 'today';
 
         return {
             valid: true,
             allSlots, today, tomorrow: showTomorrow ? tomorrow : [],
             amountHours, slotMin, windowSize,
-            winSlots, avgPrice, endDt, midLevel, winSet, dayStr,
+            winSlots, avgPrice, endDt, midLevel, winSet, dayKey,
         };
     }
 
@@ -156,9 +157,9 @@ class TibberCheapestWindow extends window.visRxWidget {
                 <line key="sep" x1={sepX} y1={padT} x2={sepX} y2={svgH - padB}
                     stroke={lc} strokeWidth={1} strokeDasharray="3,2" />,
                 <text key="lbl-h" x={today.length * barW / 2} y={padT + 6}
-                    textAnchor="middle" fontSize={6} fill={lc}>Heute</text>,
+                    textAnchor="middle" fontSize={6} fill={lc}>{this.tr('today')}</text>,
                 <text key="lbl-m" x={today.length * barW + tomorrow.length * barW / 2} y={padT + 6}
-                    textAnchor="middle" fontSize={6} fill={lc}>Morgen</text>,
+                    textAnchor="middle" fontSize={6} fill={lc}>{this.tr('tomorrow')}</text>,
             );
         }
 
@@ -181,7 +182,7 @@ class TibberCheapestWindow extends window.visRxWidget {
         }
         const { rxData, values } = this.state;
         const dark        = rxData.tib_darkmode !== false;
-        const title       = rxData.tib_title    || 'Günstigstes Fenster';
+        const title       = rxData.tib_title    || this.tr('title_window');
         const amountHours = parseInt(rxData.amount_hours, 10) || 3;
 
         const w = this._computeWindow(rxData, values);
@@ -193,24 +194,24 @@ class TibberCheapestWindow extends window.visRxWidget {
                         <div className="tib-cw-title">⚡ {title}</div>
                         <div className="tib-cw-times">
                             <div className="tib-cw-time-block">
-                                <div className="tib-cw-time-label">Start</div>
+                                <div className="tib-cw-time-label">{this.tr('start')}</div>
                                 <div className="tib-cw-time-val">--:--</div>
                             </div>
                             <div className="tib-cw-arrow">→</div>
                             <div className="tib-cw-time-block">
-                                <div className="tib-cw-time-label">Ende</div>
+                                <div className="tib-cw-time-label">{this.tr('end')}</div>
                                 <div className="tib-cw-time-val">--:--</div>
                             </div>
                         </div>
-                        <div className="tib-cw-avg">Keine Daten</div>
+                        <div className="tib-cw-avg">{this.tr('no_data')}</div>
                         <div className="tib-cw-spark" />
-                        <div className="tib-cw-info">-- · {amountHours} Stunden</div>
+                        <div className="tib-cw-info">{this.tr('window_info', '--', String(amountHours))}</div>
                     </div>
                 </div>
             );
         }
 
-        const { winSlots, avgPrice, endDt, midLevel, dayStr } = w;
+        const { winSlots, avgPrice, endDt, midLevel, dayKey } = w;
         const avgCol = slotColor(midLevel, true);
 
         return (
@@ -219,12 +220,12 @@ class TibberCheapestWindow extends window.visRxWidget {
                     <div className="tib-cw-title">⚡ {title}</div>
                     <div className="tib-cw-times">
                         <div className="tib-cw-time-block">
-                            <div className="tib-cw-time-label">Start</div>
+                            <div className="tib-cw-time-label">{this.tr('start')}</div>
                             <div className="tib-cw-time-val">{fmtTime(winSlots[0].startsAt)}</div>
                         </div>
                         <div className="tib-cw-arrow">→</div>
                         <div className="tib-cw-time-block">
-                            <div className="tib-cw-time-label">Ende</div>
+                            <div className="tib-cw-time-label">{this.tr('end')}</div>
                             <div className="tib-cw-time-val">{endDt ? fmtTime(endDt.toISOString()) : '--:--'}</div>
                         </div>
                     </div>
@@ -234,7 +235,7 @@ class TibberCheapestWindow extends window.visRxWidget {
                     <div className="tib-cw-spark">
                         {this._renderSparkline(w, dark)}
                     </div>
-                    <div className="tib-cw-info">{dayStr} · {amountHours} Stunden</div>
+                    <div className="tib-cw-info">{this.tr('window_info', this.tr(dayKey), String(amountHours))}</div>
                 </div>
             </div>
         );
