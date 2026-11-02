@@ -102,6 +102,9 @@ VIS-2 виджеты для отображения данных динамиче
 
 ## Журнал изменений
 
+### 0.5.2 (2026-11-02)
+* (ssbingo) Рабочий процесс авто-слияния Dependabot переведён с pull_request_target на pull_request, поскольку GitHub ограничивает pull_request_target с 2 ноября 2026 года. Обновлены зависимости разработки (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1), бандл виджетов пересобран
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) Обновлены зависимости разработки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0), бандл виджетов пересобран. Готово к vis-2 на React 19 и MUI 9: сборка разделяет react и react/jsx-runtime с vis-2 и не использует ни MUI, ни adapter-react-v5
 

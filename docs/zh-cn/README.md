@@ -102,6 +102,9 @@
 
 ## 更新日志
 
+### 0.5.2 (2026-11-02)
+* (ssbingo) Dependabot 自动合并工作流从 pull_request_target 切换到 pull_request——GitHub 自 2026 年 11 月 2 日起限制该触发器。更新开发依赖（React 19.3.1、Vite 8.3.5、@module-federation/vite 1.23.5、@iobroker/types-vis-2 2.20.4、@iobroker/testing 6.3.1）并重新构建小部件包
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) 更新开发依赖（@module-federation/vite 1.23.1、Vite 8.3.2、@iobroker/testing 6.3.0）并重新构建小部件包。已就绪适配 React 19 与 MUI 9 的 vis-2：构建与 vis-2 共享 react 和 react/jsx-runtime，且未使用 MUI 或 adapter-react-v5
 

@@ -102,6 +102,9 @@
 
 ## Журнал змін
 
+### 0.5.2 (2026-11-02)
+* (ssbingo) Робочий процес авто-злиття Dependabot переведено з pull_request_target на pull_request, який GitHub обмежує з 2 листопада 2026 року. Оновлено залежності розробки (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) та перезібрано бандл віджетів
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) Оновлено залежності розробки (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) та перезібрано бандл віджетів. Готово до vis-2 з React 19 і MUI 9: збірка спільно використовує react і react/jsx-runtime з vis-2 та не використовує ні MUI, ні adapter-react-v5
 

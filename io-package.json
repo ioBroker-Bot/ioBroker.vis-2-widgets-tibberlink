@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "vis-2-widgets-tibberlink",
-        "version": "0.5.1",
+        "version": "0.5.2",
         "news": {
+            "0.5.2": {
+                "en": "switch the Dependabot auto-merge workflow from pull_request_target to pull_request, update dev dependencies and rebuild the widget bundle",
+                "de": "Dependabot-Auto-Merge-Workflow von pull_request_target auf pull_request umgestellt, Entwicklungsabhängigkeiten aktualisiert und Widget-Bundle neu gebaut",
+                "ru": "рабочий процесс авто-слияния Dependabot переведён с pull_request_target на pull_request, обновлены зависимости разработки, бандл виджетов пересобран",
+                "nl": "Dependabot-automerge-workflow overgezet van pull_request_target naar pull_request, ontwikkelafhankelijkheden bijgewerkt en widgetbundel opnieuw gebouwd",
+                "fr": "workflow d'auto-fusion Dependabot basculé de pull_request_target vers pull_request, dépendances de développement mises à jour et bundle de widgets reconstruit",
+                "it": "workflow di auto-merge Dependabot migrato da pull_request_target a pull_request, dipendenze di sviluppo aggiornate e bundle dei widget ricompilato",
+                "es": "el flujo de auto-fusión de Dependabot pasa de pull_request_target a pull_request, se actualizan las dependencias de desarrollo y se reconstruye el paquete de widgets",
+                "pl": "przepływ auto-scalania Dependabot przeniesiony z pull_request_target na pull_request, zaktualizowano zależności deweloperskie i przebudowano pakiet widżetów",
+                "pt": "fluxo de auto-merge do Dependabot migrado de pull_request_target para pull_request, dependências de desenvolvimento atualizadas e pacote de widgets recompilado",
+                "uk": "робочий процес авто-злиття Dependabot переведено з pull_request_target на pull_request, оновлено залежності розробки та перезібрано бандл віджетів",
+                "zh-cn": "Dependabot 自动合并工作流从 pull_request_target 切换到 pull_request，更新开发依赖并重新构建小部件包"
+            },
             "0.5.1": {
                 "en": "update dev dependencies (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) and rebuild the widget bundle",
                 "de": "Entwicklungsabhängigkeiten aktualisiert (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) und Widget-Bundle neu gebaut",

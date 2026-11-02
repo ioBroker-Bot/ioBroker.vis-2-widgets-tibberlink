@@ -95,6 +95,9 @@ Aggregates the tibberlink `jsonDaily` consumption data for the current calendar 
 | `tib_darkmode` | `true` | Dark (default) or light theme |
 
 ## Changelog
+### 0.5.2 (2026-11-02)
+* (ssbingo) Switch the Dependabot auto-merge workflow from pull_request_target to pull_request, which GitHub restricts from 2 November 2026. Update dev dependencies (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) and rebuild the widget bundle
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) Update dev dependencies (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) and rebuild the widget bundle. Confirmed ready for vis-2 on React 19 and MUI 9: the build shares react and react/jsx-runtime with vis-2 and uses neither MUI nor adapter-react-v5
 

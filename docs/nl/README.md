@@ -102,6 +102,9 @@ Aggregeert de tibberlink `jsonDaily`-verbruiksdata voor de lopende kalendermaand
 
 ## Changelog
 
+### 0.5.2 (2026-11-02)
+* (ssbingo) Dependabot-automerge-workflow overgezet van pull_request_target naar pull_request, dat GitHub vanaf 2 november 2026 beperkt. Ontwikkelafhankelijkheden bijgewerkt (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) en widgetbundel opnieuw gebouwd
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) Ontwikkelafhankelijkheden bijgewerkt (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) en widgetbundel opnieuw gebouwd. Gereed voor vis-2 met React 19 en MUI 9: de build deelt react en react/jsx-runtime met vis-2 en gebruikt noch MUI noch adapter-react-v5
 

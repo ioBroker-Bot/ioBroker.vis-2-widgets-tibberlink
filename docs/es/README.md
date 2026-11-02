@@ -102,6 +102,9 @@ Agrega los datos de consumo `jsonDaily` de tibberlink para el mes calendario act
 
 ## Changelog
 
+### 0.5.2 (2026-11-02)
+* (ssbingo) El flujo de auto-fusión de Dependabot pasa de pull_request_target a pull_request, que GitHub restringe desde el 2 de noviembre de 2026. Se actualizan las dependencias de desarrollo (React 19.3.1, Vite 8.3.5, @module-federation/vite 1.23.5, @iobroker/types-vis-2 2.20.4, @iobroker/testing 6.3.1) y se reconstruye el paquete de widgets
+
 ### 0.5.1 (2026-10-12)
 * (ssbingo) Se actualizan las dependencias de desarrollo (@module-federation/vite 1.23.1, Vite 8.3.2, @iobroker/testing 6.3.0) y se reconstruye el paquete de widgets. Listo para vis-2 con React 19 y MUI 9: la compilación comparte react y react/jsx-runtime con vis-2 y no usa MUI ni adapter-react-v5
 
