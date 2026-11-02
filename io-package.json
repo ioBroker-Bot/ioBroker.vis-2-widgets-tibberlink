@@ -93,19 +93,6 @@
                 "pt": "adicionado Node.js 26 à matriz de testes CI (22/24/26), Node.js mínimo reduzido para 22, removida a dependência adapter-react-v5 não utilizada e widgets recompilados com Vite 8",
                 "uk": "додано Node.js 26 до матриці тестів CI (22/24/26), мінімальну версію Node.js знижено до 22, вилучено невикористовувану залежність adapter-react-v5, віджети перезібрано з Vite 8",
                 "zh-cn": "将 Node.js 26 加入 CI 测试矩阵（22/24/26），最低 Node.js 降至 22，移除未使用的 adapter-react-v5 依赖，并使用 Vite 8 重新构建小部件"
-            },
-            "0.4.11": {
-                "en": "sync template PRs: update Dependabot config, add auto-merge workflow, fix VS Code schema link",
-                "de": "Template-PRs synchronisiert: Dependabot-Konfiguration, Auto-Merge-Workflow, VS-Code-Schema-Link",
-                "ru": "Синхронизация шаблонных PR: обновление Dependabot, авто-слияние, исправление схемы VS Code",
-                "nl": "Sjabloon-PR's gesynchroniseerd: Dependabot-config, auto-merge-workflow, VS Code-schemalink",
-                "fr": "Sync PR modèles : config Dependabot, workflow auto-merge, lien schéma VS Code",
-                "it": "Sincronizzazione PR template: config Dependabot, workflow auto-merge, link schema VS Code",
-                "es": "Sincronización de PRs de plantilla: config Dependabot, workflow auto-merge, enlace esquema VS Code",
-                "pl": "Synchronizacja PR szablonów: konfiguracja Dependabot, workflow auto-merge, link schematu VS Code",
-                "pt": "Sincronização de PRs de template: config Dependabot, workflow auto-merge, link schema VS Code",
-                "uk": "Синхронізація шаблонних PR: конфігурація Dependabot, auto-merge, посилання схеми VS Code",
-                "zh-cn": "同步模板 PR：更新 Dependabot 配置、自动合并工作流、修复 VS Code 架构链接"
             }
         },
         "titleLang": {
